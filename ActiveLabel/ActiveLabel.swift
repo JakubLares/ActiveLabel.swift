@@ -16,7 +16,7 @@ public protocol ActiveLabelDelegate: class {
 public typealias ConfigureLinkAttribute = (ActiveType, [NSAttributedStringKey : Any], Bool) -> ([NSAttributedStringKey : Any])
 typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveType)
 
-@IBDesignable open class ActiveLabel: UILabel {
+open class ActiveLabel: UILabel {
     
     // MARK: - public properties
     open weak var delegate: ActiveLabelDelegate?
@@ -205,7 +205,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
                 updateAttributesWhenSelected(false)
                 selectedElement = nil
             }
-        case .ended:
+        case .ended, .cancelled:
             guard let selectedElement = selectedElement else { return avoidSuperCall }
 
             switch selectedElement.element {
@@ -221,9 +221,6 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
                 self.selectedElement = nil
             }
             avoidSuperCall = true
-        case .cancelled:
-            updateAttributesWhenSelected(false)
-            selectedElement = nil
         case .stationary:
             break
         }
