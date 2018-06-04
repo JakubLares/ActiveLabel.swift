@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
 	s.name    = 'ActiveLabelGilsy'
-	s.version = '1.0.0'
+	s.version = '0.8.1'
 
-	s.author      = { 'Lifeplus' => 'hello@optonaut.co' }
+	s.author      = { 'Optonaut' => 'hello@optonaut.co' }
 	s.homepage    = 'https://github.com/JakubLares/ActiveLabel.swift'
 	s.license     = { :type => 'MIT', :file => 'LICENSE' }
 	s.platform    = :ios, '10.0'
