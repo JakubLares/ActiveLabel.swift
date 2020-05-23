@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
 	s.version = '1.1.0'
 
 	s.author      = { 'Optonaut' => 'hello@optonaut.co' }
-	s.homepage    = 'https://github.com/JakubLares/ActiveLabel.swift'
+	s.homepage    = 'https://github.com/JakubLares/ActiveLabel.swift.git'
 	s.license     = { :type => 'MIT', :file => 'LICENSE' }
 	s.platform    = :ios, '10.0'
-	s.source      = { :git => 'https://github.com/JakubLares/ActiveLabel.swift', :tag => s.version.to_s }
+	s.source      = { :git => 'https://github.com/JakubLares/ActiveLabel.swift.git', :tag => s.version.to_s }
 	s.summary     = 'UILabel drop-in replacement supporting Hashtags (#), Mentions (@), URLs (http://) and custom regex patterns, written in Swift'
 	s.description = <<-DESC
 		UILabel drop-in replacement supporting Hashtags (#), Mentions (@), URLs (http://) and custom regex patterns, written in Swift
@@ -23,4 +23,5 @@ Pod::Spec.new do |s|
 	DESC
 
 	s.source_files = 'ActiveLabel/*.swift'
+	s.swift_versions = "5.0"
 end
