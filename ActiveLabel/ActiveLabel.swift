@@ -221,7 +221,7 @@ open class ActiveLabel: UILabel {
                 self.selectedElement = nil
             }
             avoidSuperCall = true
-        case .stationary:
+        default:
             break
         }
 
