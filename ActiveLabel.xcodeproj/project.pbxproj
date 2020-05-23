@@ -254,10 +254,9 @@
 			};
 			buildConfigurationList = 8F02499C1B9989B1005D8035 /* Build configuration list for PBXProject "ActiveLabel" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
